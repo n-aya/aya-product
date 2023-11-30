@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Calendar</title>
+    </head>
+    <body>
+    <h2 id="month-year">Monthly Calendar</h2>
+
+    <button id="prev" onclick="previousMonth()">previous</button>
+    <button id="next" onclick="nextMonth()">next</button>
+
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="mission5_calendar.js"></script>
+    </body>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #766475;
+            padding: 8px;
+            width: auto;
+            text-align: center;
+        }
+        th {
+            background-color: #fff6cb;
+        }
+        td {
+            height: 80px;
+        }
+        button {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+        }
+        #prev{
+            float: left;
+        }
+        #next{
+            float: right;
+        }
+    </style>
+</html>
